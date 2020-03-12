@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
   pull_request:
-    branches: [ master ]
+    branches: [ develop ]
 
 jobs:
   build:
@@ -21,14 +21,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - run: |
+          git checkout master
+          git merge develop
       - run: npm ci
       - run: npm run build
       - run: |
-          cp -r build docs
+          cp -pR build/* .
           git config user.name "Soeking"
           git config user.email "great.from.g@gmail.com"
           git remote set-url origin https://github.com/Soeking/Soeking.github.io.git
-          git checkout master
           git add .
           git commit -m "on pages"
           git push origin master
