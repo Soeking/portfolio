@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts-kotlin start",
-    "build": "set CI=false && react-scripts-kotlin build",
+    "build": "CI=false; react-scripts-kotlin build",
     "eject": "react-scripts-kotlin eject",
     "gen-idea-libs": "react-scripts-kotlin gen-idea-libs",
     "get-types": "react-scripts-kotlin get-types --dest=src/types",
