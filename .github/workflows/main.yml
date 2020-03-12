@@ -24,7 +24,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: |
-          mv -r build docs
+          cp -r build docs
           git config user.name "Soeking"
           git config user.email "great.from.g@gmail.com"
           git remote set-url origin https://github.com/Soeking/Soeking.github.io.git
