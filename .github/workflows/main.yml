@@ -24,7 +24,13 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: |
-          pwd
-          ls
+          mv -r build docs
+          git config user.name "Soeking"
+          git config user.email "great.from.g@gmail.com"
+          git remote set-url origin https://github.com/Soeking/Soeking.github.io.git
+          git checkout master
+          git add .
+          git commit -m "on pages"
+          git push origin master
         env:
           CI: true
