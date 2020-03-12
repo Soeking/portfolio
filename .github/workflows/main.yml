@@ -22,6 +22,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: |
+          git fetch
           git checkout master
           git merge develop
       - run: npm ci
