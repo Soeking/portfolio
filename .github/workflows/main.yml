@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: |
+          git config user.name "Soeking"
+          git config user.email "great.from.g@gmail.com"
           git fetch
           git checkout master
           git merge develop --allow-unrelated-histories
