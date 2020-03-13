@@ -24,7 +24,7 @@ jobs:
       - run: |
           git fetch
           git checkout master
-          git merge develop
+          git merge develop --allow-unrelated-histories
       - run: npm ci
       - run: npm run build
       - run: |
@@ -33,7 +33,7 @@ jobs:
           git config user.email "great.from.g@gmail.com"
           git remote set-url origin https://github.com/Soeking/Soeking.github.io.git
           git add .
-          git commit -m "on pages"
+          git commit -m "build"
           git push origin master
         env:
           CI: true
