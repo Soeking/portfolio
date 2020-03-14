@@ -3,9 +3,9 @@
   "name": "Create React Kotlin App Sample",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "soeking_icon.jpg",
+      "sizes": "400x400",
+      "type": "image/jpg"
     }
   ],
   "start_url": "./index.html",
