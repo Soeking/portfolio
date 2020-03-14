@@ -5,3 +5,9 @@ body {
 .Link {
     padding: 10px;
 }
+
+.LinkIcon {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}

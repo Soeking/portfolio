@@ -7,5 +7,5 @@ import react.dom.img
 external val icon: dynamic
 
 fun RBuilder.logo() {
-    img("icon", icon as? String,"Logo") {}
+    img("icon", icon as? String, "Logo") {}
 }
