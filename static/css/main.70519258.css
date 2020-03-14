@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+.Link {
+    padding: 10px;
+}
+
+.LinkIcon {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.Logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.70519258.css.map*/
